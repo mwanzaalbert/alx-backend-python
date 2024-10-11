@@ -23,7 +23,7 @@ def to_kv(k: str, v: typing.Union[int, float]) -> typing.Tuple[str, float]:
         Tuple[str, float]: A tuple containing the string key and the numeric
         value as a float.
     """
-    return k, v
+    return k, v ** 2
 
 
 if __name__ == "__main__":
