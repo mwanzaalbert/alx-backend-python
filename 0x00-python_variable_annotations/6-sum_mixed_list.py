@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 The module provides a function to calc sum of a mixed list of ints and floats.
 

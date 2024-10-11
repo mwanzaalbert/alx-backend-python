@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 The module provides a function to safely retrieve a value from a dictionary.
 

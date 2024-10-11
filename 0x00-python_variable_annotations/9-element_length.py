@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 The module provides a function to calc len() of elements in list of sequences.
 
