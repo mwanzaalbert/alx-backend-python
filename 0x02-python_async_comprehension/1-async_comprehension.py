@@ -21,9 +21,10 @@ async def async_comprehension() -> List[float]:
     return [i async for i in async_generator()]
 
 
-if __name__ == "__main__":
-    async def main():
-        """Entry Point."""
-        print(await async_comprehension())
+async def main() -> None:
+    """Entry Point."""
+    print(await async_comprehension())
 
+
+if __name__ == "__main__":
     asyncio.run(main())
