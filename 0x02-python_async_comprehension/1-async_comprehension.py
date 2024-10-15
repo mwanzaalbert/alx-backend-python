@@ -1,6 +1,26 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+Module for asynchronous random number collection.
+
+This module defines a coroutine that collects random float numbers
+between 0 and 10 using an asynchronous comprehension over a previously
+defined asynchronous generator.
+
+Functions:
+-----------
+- async_comprehension: Collects 10 random float numbers using
+  an asynchronous comprehension over the async_generator.
+
+Usage:
+------
+To execute the module, run it as a standalone script. The collected
+random numbers will be printed to the console.
+
+Example:
+-------
+$ python3 your_module_name.py
+
 Created on Tue Oct 15 13:45:17 2024.
 
 @author: AM

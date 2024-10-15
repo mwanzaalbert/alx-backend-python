@@ -1,6 +1,30 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+Module for asynchronous random number generation.
+
+This module contains an asynchronous generator that yields random float
+numbers between 0 and 10. It includes a coroutine to print the generated
+numbers after a specified delay.
+
+Functions:
+-----------
+- async_generator: Asynchronously generates 10 random float numbers
+  between 0 and 10, waiting 1 second between each number.
+
+- print_yielded_values: Collects and prints the values yielded by
+  the async_generator.
+
+Usage:
+------
+To execute the module, run it as a standalone script. The generated
+random numbers will be printed to the console.
+
+Example:
+--------
+$ python3 your_module_name.py
+
+
 Created on Tue Oct 15 13:34:17 2024.
 
 @author: AM
