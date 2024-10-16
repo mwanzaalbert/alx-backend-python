@@ -31,10 +31,10 @@ Created on Tue Oct 15 13:34:17 2024.
 
 import asyncio
 import random
-from typing import AsyncGenerator, List
+from typing import Generator, List
 
 
-async def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator() -> Generator[float, None]:
     """
     Asynchronously generates 10 random numbers between 0 and 10.
 
