@@ -105,7 +105,7 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
         """Set up the class for testing"""
         cls._org_name = "test_org"
         cls.ORG_URL = "https://api.github.com/orgs/{org}"
-        
+
         cls.get_patcher = patch('requests.get')
         cls.mock_get = cls.get_patcher.start()
 
@@ -134,7 +134,7 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
 
     def test_public_repos_with_license(self):
         """Test public_repos method with license filtering"""
-        client = GithubOrgClient("google")
+        client = GithubOrgClient("test_org")
         repos = client.public_repos(license="apache-2.0")
         self.assertEqual(repos, self.apache2_repos)
 
