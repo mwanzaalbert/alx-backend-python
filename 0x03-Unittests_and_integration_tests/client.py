@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """A github org client
 """
 from typing import (
@@ -52,7 +53,8 @@ class GithubOrgClient:
         """Static: has_license"""
         assert license_key is not None, "license_key cannot be None"
         try:
-            has_license = access_nested_map(repo, ("license", "key")) == license_key
+            has_license = access_nested_map(
+                repo, ("license", "key")) == license_key
         except KeyError:
             return False
         return has_license

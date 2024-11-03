@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """A module for testing the client module.
 """
 import unittest
@@ -41,7 +42,7 @@ class TestGithubOrgClient(unittest.TestCase):
         with patch(
                 "client.GithubOrgClient.org",
                 new_callable=PropertyMock,
-                ) as mock_org:
+        ) as mock_org:
             mock_org.return_value = {
                 'repos_url': "https://api.github.com/users/google/repos",
             }
@@ -94,7 +95,7 @@ class TestGithubOrgClient(unittest.TestCase):
         with patch(
                 "client.GithubOrgClient._public_repos_url",
                 new_callable=PropertyMock,
-                ) as mock_public_repos_url:
+        ) as mock_public_repos_url:
             mock_public_repos_url.return_value = test_payload["repos_url"]
             self.assertEqual(
                 GithubOrgClient("google").public_repos(),
